@@ -4,166 +4,237 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>BitcoinPay.Creditcard – How Bitcoin Cards Actually Work</title>
-  <meta name="description"
-        content="How Bitcoin-linked credit cards convert BTC to fiat when you tap or swipe. Learn fees, limits, security and how BTC integrates with Visa/Mastercard rails." />
+  <title>BitcoinPay.Creditcard – How Bitcoin Card Payments Work</title>
+  <meta name="description" content="BitcoinPay.creditcard explains how Bitcoin-backed cards work at the terminal: conversion, spreads, fees, rewards and risk. Independent overview of Bitcoin card payments." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://bitcoinpay.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BitcoinPay.Creditcard – Bitcoin to Card Payments" />
-  <meta property="og:description"
-        content="How Bitcoin is converted to spendable card balance using global payment rails." />
+  <meta property="og:title" content="BitcoinPay.Creditcard – Bitcoin Card Payments Explained" />
+  <meta property="og:description" content="Learn how Bitcoin card payments are processed, when BTC is converted to fiat, and how fees and rewards impact real-world spending." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bitcoinpay.creditcard/" />
-  <meta property="og:image" content="https://bitcoinpay.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BitcoinPay.Creditcard – Bitcoin Card Payments Explained" />
+  <meta name="twitter:description" content="Independent explanation of Bitcoin-backed cards, on-ramp/off-ramp flows, spreads and tax considerations." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
-
-  <!-- HEADER – unified CC -->
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
       <div class="brand">
         <div class="cc-logo">CC</div>
         <div class="brand-text">
-          <span class="brand-title">BitcoinPay.creditcard</span>
-          <span class="brand-subtitle">BTC · Conversion · Rails</span>
+          <div class="brand-title">BitcoinPay.Creditcard</div>
+          <div class="brand-subtitle">Bitcoin Card Payments Explained</div>
         </div>
       </div>
-
       <nav class="nav-links">
-        <a href="https://fin.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=nav&utm_campaign=collection">
-          Collection
-        </a>
-        <a href="https://tech.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=nav&utm_campaign=tech_crypto">
-          Tech · Crypto rails
-        </a>
-        <a href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=nav&utm_campaign=choose">
-          Choose
-        </a>
+        <a href="#overview">Overview</a>
+        <a href="#flow">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      BitcoinPay Credit Cards
+    </div>
 
-    <p class="cc-breadcrumb">BitcoinPay.creditcard · BTC · Conversion · Rails</p>
-
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero">
-      <h1>Bitcoin to Card Payments</h1>
-      <p class="hero-lead">How BTC value becomes a Visa/Mastercard transaction.</p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=bitcoinpay_top">
-        Compare Bitcoin-Friendly Cards
-      </a>
-    </section>
-
-    <!-- What is BitcoinPay -->
-    <section class="section">
-      <h2>What is a Bitcoin credit card?</h2>
-      <p class="small">
-        A Bitcoin-linked card lets you spend BTC anywhere cards are accepted.
-        When you tap or swipe, the provider sells enough BTC to cover the purchase,
-        and the merchant receives local fiat currency.
-      </p>
-      <ul class="list">
-        <li>Spend BTC like a normal debit/credit card</li>
-        <li>Auto-conversion at transaction time</li>
-        <li>Rewards may pay out in BTC</li>
-        <li>Works globally on Visa/Mastercard rails</li>
-      </ul>
-    </section>
-
-    <!-- How it works -->
-    <section class="section">
-      <h2>How the BTC → Card flow works</h2>
-      <div class="cluster-grid">
-        <div class="cluster-card">
-          <h3>1. Tap or swipe</h3>
-          <p class="small">
-            NFC or chip sends tokenized card data — blockchain is not touched.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>2. BTC conversion</h3>
-          <p class="small">
-            Provider sells enough BTC instantly to fund the fiat amount.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>3. Visa/Mastercard rails</h3>
-          <p class="small">
-            The payment travels through normal card networks like any other card.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>4. Settlement</h3>
-          <p class="small">
-            Merchant receives fiat. Your BTC balance decreases accordingly.
-          </p>
-        </div>
+      <div class="hero-content">
+        <h1>How Bitcoin-Backed Card Payments Actually Settle</h1>
+        <p class="hero-lead">
+          BitcoinPay.Creditcard explains what happens when you swipe, tap or pay online with a Bitcoin-linked card – from BTC conversion and spreads to fees, rewards and tax questions.
+        </p>
+        <a class="cta" href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Compare Bitcoin-friendly credit cards
+        </a>
       </div>
     </section>
 
-    <!-- Fees -->
+    <!-- Content sections -->
+    <section id="overview" class="section">
+      <h2>What Is a Bitcoin Card?</h2>
+      <p>A Bitcoin card is usually a debit or credit card connected to a Bitcoin wallet or custody account. At the checkout, the payment runs over normal card rails (Visa, Mastercard or similar), but the funds ultimately come from selling your BTC.</p>
+      <p>In most designs, the merchant is paid entirely in fiat. Your Bitcoin position is reduced in the background by an amount that covers the purchase plus any fees and spreads.</p>
+    </section>
+
+    <section id="flow" class="section">
+      <h2>From BTC Balance to Terminal Approval</h2>
+      <p>When you start a transaction, the terminal sends an authorization request just like a normal card payment. Behind the scenes, the card issuer or partner platform:</p>
+      <ul class="list">
+        <li>Checks your available BTC balance or preload balance.</li>
+        <li>Calculates the fiat amount needed, including fees and spreads.</li>
+        <li>Reserves or sells the required BTC via an exchange or internal book.</li>
+        <li>Responds to the card network with approve or decline.</li>
+      </ul>
+      <p>Some products convert BTC just-in-time for each transaction, while others ask you to preload a fiat balance from Bitcoin before you spend.</p>
+    </section>
+
     <section class="section">
-      <h2>Fees & spreads</h2>
+      <h2>Conversion Timing: Just-in-Time vs. Preloaded</h2>
+      <p>Conversion timing matters:</p>
+      <ul class="list">
+        <li><strong>Just-in-time conversion</strong> converts BTC at the moment of purchase. You track BTC value up to the instant you spend, but volatility affects each transaction.</li>
+        <li><strong>Preloaded conversion</strong> lets you convert a chunk of BTC to fiat in advance, then spend that fiat over time. You lock in one rate but lose upside if BTC rises later.</li>
+      </ul>
+      <p>Some users prefer preloading for simpler tax reporting; others prefer JIT to avoid holding long-term fiat exposure.</p>
+    </section>
+
+    <section class="section">
+      <h2>Fees, Spreads and Network Costs</h2>
+      <p>Bitcoin card marketing often highlights “up to X% back in rewards”, but the real economics depend heavily on spreads and fees:</p>
+      <ul class="list">
+        <li>Conversion spread between the market BTC price and what you actually receive.</li>
+        <li>Card network and issuer fees, including FX markups for foreign transactions.</li>
+        <li>On-chain or Lightning network fees if the platform actually moves BTC on-chain.</li>
+        <li>Additional platform service fees or membership tiers.</li>
+      </ul>
+      <p>A 1–2% spread plus FX and card fees can easily offset a 2–3% reward headline.</p>
+    </section>
+
+    <section class="section">
+      <h2>Rewards in BTC, Fiat or Platform Tokens</h2>
+      <p>Rewards on Bitcoin cards may be credited as:</p>
+      <ul class="list">
+        <li>Bitcoin back on your wallet balance.</li>
+        <li>Fiat cash back to your card account.</li>
+        <li>Platform or exchange tokens that carry extra risk.</li>
+      </ul>
+      <p>It’s important to evaluate not only the percentage but also the asset you’re paid in and how easily it can be withdrawn or traded.</p>
+    </section>
+
+    <section class="section">
+      <h2>Tax and Record-Keeping Considerations</h2>
+      <p>In many jurisdictions, selling BTC – even indirectly through a card – can be a taxable event. Frequent small purchases may create long lists of disposals with different cost bases.</p>
+      <p>Look for issuers that provide detailed statements, CSV exports or tax reports to help you track realized gains and losses from card usage.</p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Comparing Bitcoin Card Designs</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
             <tr>
-              <th>Fee</th>
-              <th>What to check</th>
+              <th>Design</th>
+              <th>Key Trait</th>
+              <th>Best For</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Spread</td><td>Hidden markup on BTC → fiat conversion.</td></tr>
-            <tr><td>Conversion fee</td><td>Per-transaction conversion cost.</td></tr>
-            <tr><td>ATM fees</td><td>Often higher for crypto cards.</td></tr>
-            <tr><td>Network fees</td><td>BTC transaction fees if topping up.</td></tr>
-            <tr><td>Daily limits</td><td>Spending caps vary widely.</td></tr>
+            <tr>
+              <td>JIT Conversion Credit Card</td>
+              <td>BTC converted per transaction, possible credit line</td>
+              <td>Active BTC users wanting traditional credit features</td>
+            </tr>
+            <tr>
+              <td>Prepaid / Preloaded BTC Card</td>
+              <td>Convert BTC to fiat, then spend fiat balance</td>
+              <td>People who want predictable balances and simpler tax logs</td>
+            </tr>
+            <tr>
+              <td>Lightning-Integrated Card</td>
+              <td>BTC custody plus Lightning or LN-based funding</td>
+              <td>Tech-savvy users comfortable with newer infrastructure</td>
+            </tr>
+            <tr>
+              <td>Exchange-Branded Card</td>
+              <td>Tightly coupled to a specific trading platform</td>
+              <td>Users already using that exchange for most BTC activity</td>
+            </tr>
           </tbody>
         </table>
       </div>
+      <p class="small">
+        For product-by-product comparisons of Bitcoin-friendly cards, visit
+        <a href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
     </section>
 
-    <!-- CTA Compare -->
+    <!-- Cluster links -->
     <section class="section">
-      <h2>Which Bitcoin card is best?</h2>
+      <h2>Related Crypto &amp; Payments Microsites</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://cryptopay.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=cluster_cryptopay">
+          <h3>CryptoPay.Creditcard</h3>
+          <p>General crypto credit-card flows beyond just Bitcoin.</p>
+        </a>
+        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
+          <h3>BTCPay.Creditcard</h3>
+          <p>Merchant-side BTC processing and settlement options.</p>
+        </a>
+        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+          <h3>Tokens.Creditcard</h3>
+          <p>Tokenized rewards, platform tokens and loyalty schemes.</p>
+        </a>
+        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
+          <h3>DefiPay.Creditcard</h3>
+          <p>DeFi-linked cards and yield routing for on-chain assets.</p>
+        </a>
+        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual cards and wallets used together with BTC.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        Some offer BTC cashback, others prioritize low spreads or better FX perks.
-        For real product comparison:
+        BitcoinPay.Creditcard is a Bitcoin-focused spoke in <strong>The CreditCard Collection</strong> — a network of narrowly focused microsites operated by ronarn AS. Each site explains one concept in payments or credit cards, then points you to neutral comparison tools.
       </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=bitcoinpay_bottom">
-        Compare on Choose.Creditcard
+      <p class="small">
+        We do not issue cards or custody Bitcoin. We summarize documentation, highlight trade-offs and send you to providers for full terms and conditions.
+      </p>
+      <p class="small">
+        To compare card products across APR, rewards, fees, travel perks and crypto support, go to
+        <a href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=collection_section">
+          Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to See Which Cards Support Bitcoin?</h2>
+      <p class="small">
+        Use BitcoinPay.Creditcard to understand the mechanics behind BTC card spending — then use the main comparison hub to see current Bitcoin-enabled products in your region.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=bitcoinpay.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Explore Bitcoin cards on Choose.Creditcard
       </a>
     </section>
-
   </main>
 
-  <!-- MINI FOOTER -->
   <footer class="mini-footer">
-    <p class="mini-footer-main">
-      © 2025 The CreditCard Collection — ronarn AS
-    </p>
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
     <p class="mini-footer-contact">
       Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
   </footer>
-
 </body>
 </html>
